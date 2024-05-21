@@ -1,0 +1,63 @@
+ 954  chmod 777 /var/run/docker.sock
+  955  sudo chmod 777 /var/run/docker.sock
+  956  docker images
+  957  docker ps -a
+  958  clear
+  959  docker-compose up -d
+  960  docker-compose ps
+  961  docker-compose logs db_backend_1
+  962  docker ps -a
+  963  docker rm -f $(docker ps -a -q)
+  964  docker ps -a
+  965  docker images
+  966  docker rmi 7680f216ef10
+  967  docker rmi 801c483d4169
+  968  docker images
+  969  docker ps -a
+  970  docker images 
+  971  ls
+  972  docker-compose up -d
+  973  docker ps
+  974  docker prune
+  975  docker system prune
+  976  docker ps
+  977  docker rm -f db_frontend
+  978  docker ps
+  979  docker rm -f db_frontend_1
+  980  docker ps
+  981  docker-compose up -d
+  982  netstat -plan | grep 27017
+  983  ps auxff | grep mongo
+  984  kill -9 133799
+  985  sudo kill -9 133799
+  986  ps auxff | grep mongo
+  987  docker-compose up -d
+  988  ps auxff | grep 3001
+  989  kill -9 134643
+  990  sudo kill -9 134643
+  991  ps auxff | grep 3000
+  992  sudo kill -9 140122
+  993  ps auxff | grep 3000
+  994  docker ps
+  995  docker-compose up -d
+  996  netstat -plan | grep 3001
+  997  lsof -p 3001
+  998  sudo lsof -p 3001
+  999  docker ps -a
+ 1000  docker rm -f db_backend_1
+ 1001  netstat -plan | grep 3001
+ 1002  docker ps -a
+ 1003  netstat -plan | grep 3001
+ 1004  sudo lsof -p 3001
+ 1005  ps auxff | grep 3001
+ 1006  sudo kill -9 134650
+ 1007  ps auxff | grep 3001
+ 1008  netstat -plan | grep 3001
+ 1009  docker-compose up -d
+ 1010  docker ps
+ 1011  docker logs db_backend_1
+ 1012  docker-compose down
+ 1013  docker-compose up -d
+ 1014  docker ps
+ 1015  history
+

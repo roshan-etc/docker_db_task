@@ -1,0 +1,15 @@
+db.todos.stats()
+db.todos.findOne()
+db.todos.stats()
+db.todos.findOne()
+db.todos.findone()
+db.todos.findone
+db.todos.find
+clear 
+db.collectionName.stats()
+db.todos.findOne()
+db.collectionName.findOne()
+db
+show collections
+show databases
+use todos

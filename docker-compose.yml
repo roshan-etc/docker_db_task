@@ -1,0 +1,36 @@
+version: '3'
+services:
+  mongo:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - /home/user/Desktop/DB/DBdata:/data/db
+    networks:
+      - my_network
+
+  backend:
+    depends_on: 
+    - mongo
+    build: ./Backend-handiya
+    container_name: backend
+    ports:
+      - "3001:3001"
+    networks:
+      - my_network
+
+  frontend:
+    depends_on: 
+    - backend
+    container_name: frontend
+    build: ./Frontend-Handiya
+    ports:
+      - "3000:3000"
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
+
